@@ -1,0 +1,82 @@
+body { /*NO TOCAR*/
+	background-color: black; /* Color de fondo de toda la página. NO TOCAR  */
+}
+
+#contenedor { /*NO TOCAR*/
+	background-color: white; /* Color del fondo de #contenedor. NO TOCAR */
+	width:90%; /* Ocupa el 90% de la pantalla. NO TOCAR */
+	margin: 0 auto; /*Centra #contenedor al medio de la pantalla. NO TOCAR */
+ 
+	/* Añadir si fuera necesario */ 
+	
+}
+
+/* Elementos hijos de #contenedor */
+
+
+#cabecera {
+	float: left;
+	/* Añadir elementos si fuera necesario */ 
+}
+
+
+
+/* Añadir etiquetas y elementos */ 
+
+
+
+#pie {
+	clear: both;
+	/* Añadir elementos */ 
+}
+
+/************************************************/
+
+
+body {
+    font-family: Times New Roman, Georgia;
+}
+
+#cabecera {
+    float: left;
+}
+
+#menulateral {
+    float: left;
+    width: 12%;
+    height: 450px;
+    margin: 1% 0% 1% 1%;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+#contenido {
+    float: right;
+    margin: 1%;
+    width: 85%;
+    height: 450px;
+    background-color: gray
+}
+
+#pie {
+    border: 1px red solid;
+}
+
+div #contenido p {
+    padding: 10%;
+}
+
+div #contenido p:first-letter {
+    font-size: 250%
+}
+
+div #cabecera p {
+    font-weight: bold;
+}
+
+.cabeceraypie {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}

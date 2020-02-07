@@ -1,0 +1,90 @@
+body {
+    font-family: Arial;
+    font-size: 16px;
+}
+
+/*Centrado de la pagina*/
+
+.contenedor {
+    display: flex;
+    align-items: center;
+}
+
+.centro {
+    margin: 0 auto;
+}
+
+/*Titulo CHISTES*/
+
+@font-face {
+    font-family: "chewy";
+    src: url(../chewy.woff2);
+}
+
+.titulo {
+    text-align: center;
+    color: #9AD147;
+    font-family: chewy;
+    font-size: 43px;
+}
+
+span {
+    background-color: #9AD147;
+    color: white;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+/*Tabla*/
+
+table, tr, td {
+    background-color: #ECEADC;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.contacto {
+    background-color: #233C42;
+    border:1px #233c42 solid;
+    color: white;
+    font-weight: bold;
+    padding-left: 0.6em;
+    font-size: 22px;
+}
+
+td {
+    width: 450px
+}
+
+/*Chat*/
+
+.izquierda {
+    background-color: white;
+    border-radius: 7px;
+    border: 1px black solid;
+    display: block;
+    padding: 0.2em;
+    padding-right: 0.1em;
+    width: 60%;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.derecha {
+    background-color: #9AD147;
+    border-radius: 10px;
+    border: 1px black solid;
+    display: block;
+    margin: 0.25em;
+    padding: 0.2em;
+    padding-left: 0.6em;
+    text-align: right;
+    width: 60%;
+    float: right;
+    margin-right: 0.5em;
+}
+
+.final{
+    margin-bottom: 1em;
+}

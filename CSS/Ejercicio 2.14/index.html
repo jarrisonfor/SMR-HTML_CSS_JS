@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2.14</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<h4>Formulario de registro</h4>
+    <form action="file.php">
+        <fieldset>
+            <legend>¿QUIEN ERES?</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+            <label for="Apellidos">Apellidos</label>
+            <input type="text" id="nombre">
+            <label for="Correo">Correo electronico</label>
+            <input type="text" id="Correo">
+            <label for="fecha">Fecha de nacimiento</label>
+            <select name="fecha" id="fecha">
+                <option value="Dia">Dia</option>
+            </select>
+            <select name="Mes" id="Mes">
+                <option value="Mes">Mes</option>
+            </select>
+            <select name="Año" id="Año">
+                <option value="Año">Año</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>¿DE DONDE ERES?</legend>
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad">
+            <label for="postal">Codigo postal</label>
+            <input type="text" id="postal">
+            <label for="pais">Pais</label>
+            <select name="pais" id="pais">
+                <option value="pais">Pais</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>¿COMO QUIERES INICIAR SESION?</legend>
+            <label for="usuario">Nombre de usuario</label>
+            <input type="text" id="usuario">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena">
+            <label for="recontrasena">Vuelve a escribir la contraseña</label>
+            <input type="password" id="recontrasena">
+        </fieldset>
+        <fieldset>
+            <legend>CONDICIONES DE REGISTRO</legend>
+            <label for="ofertas">Deseo recibir ofertas de IDESWEB</label>
+            <input type="radio" name="oferta" id="dia"><span>Una vez al dia</span>
+            <input type="radio" name="oferta" id="semana"><span>Una vez a la semana</span>
+            <input type="radio" name="oferta" id="mes"><span>Una vez al mes</span>
+            <label for="aceptar">
+                <input type="checkbox"><span>Acepto el acuerdo de servicios, la delcaracion de privacidad y la declaracion de uso de cookies</span>
+            </label>
+        </fieldset>
+        <div>
+        <input type="submit" id="enviar" value="Crear cuenta">
+        </div>
+    </form>
+</body>
+</html>

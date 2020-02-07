@@ -1,0 +1,34 @@
+legend, label, span {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 0.5em 0 0 0;
+}
+
+fieldset {
+    margin: 0.5em;
+}
+
+form {
+ font-family: arial, helvetica, sans-serif;   
+}
+
+div {
+   text-align: center; 
+}
+#enviar {
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 1em
+}
+
+h4 {
+    font-family: georgia, serif;
+    text-align: center;
+}
+input:hover {background-color: red;}
+select:hover {background-color: red;}
+input:focus {background-color: yellow;}
+select:focus {background-color: yellow;}

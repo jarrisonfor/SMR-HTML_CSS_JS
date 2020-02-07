@@ -1,0 +1,18 @@
+body {
+    background-color: bisque;
+    font-family: arial, comic sans, verdana;
+    padding: 40px;
+}
+
+.uno {
+    margin-left: 2em;
+}
+
+.dos {
+    margin-top: 20px;
+}
+
+.tres {
+    margin: 10px;
+}
+

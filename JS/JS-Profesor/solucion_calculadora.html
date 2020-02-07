@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Comprobar campos de formulario desde Javascript - IES Haría</title>
+
+	<script type="text/javascript">
+		function validacion(num) {
+		 	
+		 	if (isNaN(num)) {
+		 		return false;
+		 	}
+		 	else {
+		 		return true;
+		 	}
+		}
+
+		function multiplicacion() {
+			var numA = document.getElementById("numeroA").value;
+			var numB = document.getElementById("numeroB").value;
+			
+			if (validacion(numA) && validacion(numB)){
+				var resultado = numA*numB;
+				alert ("El resultado de la multiplicación A*B es de: " + resultado);
+			}
+			else {
+				alert ('¡No es un número, vuelva a intentarlo!');
+			}
+		}
+
+		function division() {
+			var numA = document.getElementById("numeroA").value;
+			var numB = document.getElementById("numeroB").value;
+			
+			if (isNaN(numA)){
+				alert ('¡No es un número, vuelva a intentarlo!');
+			}
+			else if (isNaN(numB)){
+				alert ('¡No es un número, vuelva a intentarlo!');
+			} else {
+				var resultado = numA/numB;
+				alert ("El resultado de la división A/B es de: " + resultado);
+			}
+		}
+
+		function resto_division() {
+			var numA = document.getElementById("numeroA").value;
+			var numB = document.getElementById("numeroB").value;
+			
+			if (isNaN(numA)){
+				alert ('¡No es un número, vuelva a intentarlo!');
+			}
+			else if (isNaN(numB)){
+				alert ('¡No es un número, vuelva a intentarlo!');
+			} else {
+				var resultado = numA%numB;
+				alert ("El resto de la división A/B es de: " + resultado);
+			}
+		}
+
+		function exponente() {
+			var numA = document.getElementById("numeroA").value;
+			var numB = document.getElementById("numeroB").value;
+			
+			if (isNaN(numA)){
+				alert ('¡No es un número, vuelva a intentarlo!');
+			}
+			else if (isNaN(numB)){
+				alert ('¡No es un número, vuelva a intentarlo!');
+			} else {
+				var resultado = Math.pow(numA, numB);
+				alert ("El exponente de A^B es de: " + resultado);
+			}
+		}
+
+
+
+	</script>
+</head>
+<body>
+<br/><br/>
+<form id="formulario" method="post" action="#">
+	<label>Número A</label>
+	<input type="text" id="numeroA">
+	<br/>
+	<label>Número B</label>
+	<input type="text" id="numeroB">
+	<br/><br/>
+	<input type="submit" value="Multiplicación A*B" onclick="multiplicacion()">
+	<input type="submit" value="División A/B" onclick="division()">
+	<input type="submit" value="Resto División A/B" onclick="resto_division()">
+	<input type="submit" value="Exponente A^B" onclick="exponente()">
+</form>
+
+</body>
+</html>

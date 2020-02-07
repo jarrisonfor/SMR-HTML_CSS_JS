@@ -1,0 +1,22 @@
+/* Declaración de las etiquetas */
+
+body, html {
+    font-family: Arial;
+    font-size: 12pt;
+}
+
+textarea{
+    border-radius: 5px;
+}
+
+button{
+        font-weight:bold;
+        color:white;
+        background:#638cb5;
+        height:25px;
+        border-radius: 5px;
+}
+
+textarea{
+	background: lightblue;
+}

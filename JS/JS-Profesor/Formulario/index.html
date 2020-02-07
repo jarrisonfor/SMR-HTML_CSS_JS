@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Formulario</title>
+		<link rel="stylesheet" type="text/css" href="css/global.css" media="screen" />
+		<script type="text/javascript" src="js/usuario.js"></script>
+	</head>
+
+	<body>
+	
+	<form name = "usuarionuevo" id ="usuarionuevo" method = "post">
+    
+	<fieldset>
+		<legend>Nuevo usuario</legend>
+                <label for = "username"> Nombre de usuario</label>
+                <input name = "username" id = "username" type = "text" style="width: 100px"/>
+                <br />
+                <label for = "password">Contraseña</label>
+                <input name = "password" id = "password" type = "password" style="width: 100px"/>
+                <br />
+                <label for = "rpassword"> Repetir contraseña</label>
+                <input name = "rpassword" id = "rpassword" type = "password" style="width: 100px"/>
+                <br />
+                <label for = "dni"> DNI </label>
+                <input name = "dni" id = "dni" type = "text" style="width: 100px"/>
+                <br />
+                <label for = "realname"> Nombre </label>
+                <input name = "realname" id = "realname" type = "text" style="width: 100px"/>
+                <br />
+                <label for = "apellido1"> Primer apellido </label>
+                <input name = "apellido1" id = "apellido1" type = "text" style="width: 100px"/>
+                <br />
+                <label for = "apellido2"> Segundo apellido </label>
+                <input name = "apellido2" id = "apellido2" type = "text" style="width: 100px"/>
+                <br />
+                <label for = "email"> Correo electrónico </label>
+                <input name = "email" id = "email" type = "text" style="width: 150px"/>
+                <br />
+                <label for = "telefono"> Teléfono </label>
+                <input name = "telefono" id = "telefono" type = "text" style="width: 100px"/>
+                <br />
+                
+                <label for = "verificado"> Verificado </label>
+                <select name = "verificado" id = "verificado" type = "text" style="width: 50px">
+                <option value="n">No</option>
+                <option value="s">Sí</option> 
+                </select>
+                <br />
+        </fieldset>
+</form>
+<br />
+<div id = "errores"></div>
+
+<br />
+<button class="boton" id="boton" name="boton" value="Guardar" onClick = "javascript: enviarNuevoUsuario();">Guardar</button>
+<br /><br />
+
+</body>
+</html>

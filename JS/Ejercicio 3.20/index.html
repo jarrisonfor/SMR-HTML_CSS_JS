@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprobar campos de formulario desde Javascript - IES Haría</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        body {
+            background: lightblue
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Página para comprobar campos de Formularios desde Javascript</h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <form class="form-horizontal" onsubmit="comprobarFormulario()" id="formulario" method="get" action="#">
+                            <div class="form-group">
+                                <label class="col-sm-2">Nombre</label>
+                                <div class="col-sm-10">
+                                    <input type="text" id="nombre" class="form-control" oninput='limpiar("nombre")'>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2">Apellidos</label>
+                                <div class="col-sm-10">
+                                    <input type="text" id="apellidos" class="form-control" oninput='limpiar("apellidos")'>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2">DNI</label>
+                                <div class="col-sm-10">
+                                    <input type="text" id="dni" class="form-control" oninput='limpiar("dni")'>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2">Contraseña</label>
+                                <div class="col-sm-10">
+                                    <input type="password" id="contra" class="form-control" oninput='limpiar("contra")'>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2">Repite Contraseña</label>
+                                <div class="col-sm-10">
+                                    <input type="password" id="crepe" class="form-control" oninput='limpiar("crepe")'>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-12" style="text-align: center">
+                                    <input type="checkbox" id="condicion">
+                                    <label> &nbsp; Acepto los términos y condiciones de uso</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input class="btn btn-success btn-block" type="submit" value="Enviar">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/codigo.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

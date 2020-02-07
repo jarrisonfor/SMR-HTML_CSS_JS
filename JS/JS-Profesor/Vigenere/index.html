@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vigenere</title>
+<link rel="stylesheet" type="text/css" href="css/global.css" media="screen" />
+<script type="text/javascript" src="js/vigenere.js"></script>
+</head>
+
+<body>
+
+	<br/>
+	<form id="formulario" name="formulario" method="post">
+	<table id="tabla" name="tabla">
+		<tr>
+			<td><label for="entrada">Entrada</label></td>
+			<td><textarea cols="50" rows="10" type="text" id="entrada" name="entrada">No se admiten mensajes o claves que contengan números</textarea></td>
+		</tr>
+		
+		<tr>
+			<td><label for="clave">Clave</label></td>
+			<td><input type="text" id="clave" name="clave"></td>
+		</tr>
+
+	</table>
+	</form>
+	<table id="tabla2" name="tabla2">
+	<tr>
+		<td><button name="codificar" id="codificar" onclick="javascript: Vigenere(0)"> Codificar </button></td>
+		<td><button name="decodificar" id="decodificar" onclick="javascript: Vigenere(1)"> Decodificar </button></td>
+	</tr>
+	</table>
+<br/>
+<div id="errores" name="errores">
+</div>	
+</body>
+</html>
+	
+	

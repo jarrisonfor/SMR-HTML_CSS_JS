@@ -1,0 +1,29 @@
+body {
+    background-color: #228ecd;
+    color: white;
+}
+table.centro tr.centro, td.centro {
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    text-align: center;
+    
+}
+h1 {
+    color: #d35f5f;
+}
+ul {
+    list-style-type: circle;
+}
+li {
+    color: black;
+}
+span {
+    color: white;
+}
+form table {
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
